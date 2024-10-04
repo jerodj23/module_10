@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Query database
-pool.query('SELECT * FROM emp_manager', (err: Error, result: QueryResult) => {
+pool.query('SELECT * FROM employee', (err: Error, result: QueryResult) => {
   if (err) {
     console.log(err);
   } else if (result) {
